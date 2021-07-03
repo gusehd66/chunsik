@@ -1,0 +1,143 @@
+$width: 380px;
+.head {
+  // animation: heading 3s infinite running;
+
+  position: absolute;
+  top: 29%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fed677;
+  
+  width: $width;
+  height: $width * ( 5/ 6);
+  border-radius: 45% / 55% ;
+  &:hover {
+    animation-play-state: paused;
+  }
+  .ears {
+    position: relative;
+    top: $width* -0.083;
+    .ear {
+      position: absolute;
+      background-color: #fed677;
+      width: $width* 0.1875;
+      height: $width* 0.1;
+      border-radius: 50% 50% 0% 0% / 70% 70% 0% 0%;
+      top: $width * 0.05;
+    }
+    .left-ear {
+      left: $width* 0.125;
+      transform: rotate(-22deg);
+    }
+    .right-ear {
+      left:$width* 0.67;
+      transform: rotate(22deg);
+    }
+  }
+
+  .eyes {
+    position: relative;
+    top: $width* 0.229;
+    .eye{
+      position: absolute;
+      background-color: black;
+      width: $width* 0.083;
+      height: $width* 0.083;
+      border-radius: 50%;
+    }
+    .left-eye{
+      left: $width* 0.3125;
+    }
+    .right-eye{
+      left: $width* 0.6041;
+    }
+  }
+
+  .noses {
+    position: relative;
+    top:$width* 0.3541;
+    .nose{
+      position: absolute;
+        background-color: white;
+        width: $width* 0.1666;
+        height: $width* 0.1458;
+        
+    }
+    .nose1{
+      left: $width* 0.3541;
+      border-radius: 50% 0 50% 50%;
+    }
+    .nose2{
+      left: $width* 0.4791;
+      border-radius: 0 50% 50% 50%;
+    }
+
+    .mustache {
+      position: relative;
+      li {
+        position: absolute;
+        width: $width* 0.052;
+        height: 0px;
+        border: solid 6px black;
+        &:nth-child(1){
+          transform: rotate(10deg);
+          left: $width* 0.2812;
+          top: $width* 0.0312;
+          border-radius: 30% / 5px 2px 2px 5px;
+        }
+        &:nth-child(2){
+          transform: rotate(-10deg);
+          top: $width* 0.0312;
+          left: $width* 0.6416;
+          border-radius: 30% / 2px 5px 5px 2px;
+        }
+        &:nth-child(3){
+          transform: rotate(-10deg);
+          top: $width* 0.0937;
+          left: $width* 0.2812;
+          border-radius: 30% / 5px 2px 2px 5px;
+        }
+        &:nth-child(4){
+          transform: rotate(20deg);
+          top: $width* 0.0937;
+          left: $width* 0.6416;
+          border-radius: 30% / 2px 5px 5px 2px;
+        }
+      }
+    }
+
+    .cheeks {
+      position: relative;
+      top: $width* -0.0208;
+      .cheek{
+        position: absolute;
+        background-color: #ff9d7e;
+        width: $width *0.2083;
+        height: $width* 0.2083;
+        border-radius: 50%;
+        z-index: -1;
+      }
+      .left-cheek{
+        left: $width* 0.1458;
+      }
+      .right-cheek{
+        left: $width* 0.6458;
+      }
+    }
+
+    .tongue {
+      position: relative;
+      width: $width* 0.1041;
+      height: $width* 0.1145;
+      background-color: #ed8d7c;
+      top: $width* 0.1041;
+      left: $width* 0.4479;
+      z-index: -1;
+      border-radius: 0 0 80% 80%;
+    }
+  }
+}
+
+@keyframes heading {
+  100%{transform: rotate(1.75turn)} 
+}

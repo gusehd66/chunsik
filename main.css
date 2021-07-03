@@ -1,0 +1,175 @@
+.head {
+  position: absolute;
+  top: 29%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #fed677;
+  width: 380px;
+  height: 316.66667px;
+  border-radius: 45% / 55%;
+}
+
+.head:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.head .ears {
+  position: relative;
+  top: -31.54px;
+}
+
+.head .ears .ear {
+  position: absolute;
+  background-color: #fed677;
+  width: 71.25px;
+  height: 38px;
+  border-radius: 50% 50% 0% 0% / 70% 70% 0% 0%;
+  top: 19px;
+}
+
+.head .ears .left-ear {
+  left: 47.5px;
+  -webkit-transform: rotate(-22deg);
+          transform: rotate(-22deg);
+}
+
+.head .ears .right-ear {
+  left: 254.6px;
+  -webkit-transform: rotate(22deg);
+          transform: rotate(22deg);
+}
+
+.head .eyes {
+  position: relative;
+  top: 87.02px;
+}
+
+.head .eyes .eye {
+  position: absolute;
+  background-color: black;
+  width: 31.54px;
+  height: 31.54px;
+  border-radius: 50%;
+}
+
+.head .eyes .left-eye {
+  left: 118.75px;
+}
+
+.head .eyes .right-eye {
+  left: 229.558px;
+}
+
+.head .noses {
+  position: relative;
+  top: 134.558px;
+}
+
+.head .noses .nose {
+  position: absolute;
+  background-color: white;
+  width: 63.308px;
+  height: 55.404px;
+}
+
+.head .noses .nose1 {
+  left: 134.558px;
+  border-radius: 50% 0 50% 50%;
+}
+
+.head .noses .nose2 {
+  left: 182.058px;
+  border-radius: 0 50% 50% 50%;
+}
+
+.head .noses .mustache {
+  position: relative;
+}
+
+.head .noses .mustache li {
+  position: absolute;
+  width: 19.76px;
+  height: 0px;
+  border: solid 6px black;
+}
+
+.head .noses .mustache li:nth-child(1) {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  left: 106.856px;
+  top: 11.856px;
+  border-radius: 30% / 5px 2px 2px 5px;
+}
+
+.head .noses .mustache li:nth-child(2) {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  top: 11.856px;
+  left: 243.808px;
+  border-radius: 30% / 2px 5px 5px 2px;
+}
+
+.head .noses .mustache li:nth-child(3) {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  top: 35.606px;
+  left: 106.856px;
+  border-radius: 30% / 5px 2px 2px 5px;
+}
+
+.head .noses .mustache li:nth-child(4) {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  top: 35.606px;
+  left: 243.808px;
+  border-radius: 30% / 2px 5px 5px 2px;
+}
+
+.head .noses .cheeks {
+  position: relative;
+  top: -7.904px;
+}
+
+.head .noses .cheeks .cheek {
+  position: absolute;
+  background-color: #ff9d7e;
+  width: 79.154px;
+  height: 79.154px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.head .noses .cheeks .left-cheek {
+  left: 55.404px;
+}
+
+.head .noses .cheeks .right-cheek {
+  left: 245.404px;
+}
+
+.head .noses .tongue {
+  position: relative;
+  width: 39.558px;
+  height: 43.51px;
+  background-color: #ed8d7c;
+  top: 39.558px;
+  left: 170.202px;
+  z-index: -1;
+  border-radius: 0 0 80% 80%;
+}
+
+@-webkit-keyframes heading {
+  100% {
+    -webkit-transform: rotate(1.75turn);
+            transform: rotate(1.75turn);
+  }
+}
+
+@keyframes heading {
+  100% {
+    -webkit-transform: rotate(1.75turn);
+            transform: rotate(1.75turn);
+  }
+}
