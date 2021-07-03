@@ -45,7 +45,7 @@ body .bg .head .ears .ear {
   width: 20.7375px;
   height: 8.4px;
   border-radius: 50% 50% 0 0 / 70% 70% 0 0;
-  top: 5.25px;
+  top: 3.675px;
   border: solid;
   border-bottom: none;
 }
@@ -57,7 +57,7 @@ body .bg .head .ears .left-ear {
 }
 
 body .bg .head .ears .right-ear {
-  left: 70.35px;
+  left: 68.25px;
   -webkit-transform: rotate(25deg);
           transform: rotate(25deg);
 }
